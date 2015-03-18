@@ -1,0 +1,22 @@
+<header class="sticky">
+    <nav class="top-bar" data-topbar>
+        <ul class="brand">
+            <li class="toggle-topbar"><a href="#"><span></span></a></li>
+            <li class="name">
+                <div>
+                    <a href="/" class="title">{{ site.title }}</a>
+                    <a href="/" class="description">{{ site.description }}</a>
+                </div>
+            </li>
+        </ul>
+
+        <!-- Right Nav Section -->
+        <section>
+        <ul class="main-menu">
+            {% for item in menu.header.get_items %}
+                {% include 'element/layout/menu-item.twig' with { 'item': item } only %}
+            {% endfor %}
+        </ul>
+        </section>
+    </nav>
+</header>

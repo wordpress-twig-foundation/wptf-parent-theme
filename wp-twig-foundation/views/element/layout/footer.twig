@@ -1,0 +1,12 @@
+<footer>
+    <div class="copyright">© Copyright {{ "now"|date('Y') }} {{ site.name }}.</div>
+    <nav>
+        <ul>
+            {% for item in menu.footer.get_items %}
+                <li class="{{ item.classes | join(' ') }}">
+                    <a href="{{ item.get_link }}">{{ item.title }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </nav>
+</footer>

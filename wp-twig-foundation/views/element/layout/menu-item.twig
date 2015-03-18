@@ -1,0 +1,10 @@
+<li class="{% if item.get_children %}has-dropdown {% endif %}{{ item.classes | join(' ') }}">
+    <a href="{{ item.get_link }}">{{ item.title }}</a>
+    {% if item.get_children %}
+        <ul class="dropdown">
+            {% for child in item.get_children %}
+                {% include 'element/layout/menu-item.twig' with { 'item': child } only %}
+            {% endfor %}
+        </ul>
+    {% endif %}
+</li>

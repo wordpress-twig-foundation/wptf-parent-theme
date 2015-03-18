@@ -1,0 +1,20 @@
+{
+  "name": "wordpress-twig-foundation/wptf-parent-theme",
+  "description": "WordPress Parent Theme using Twig (Timber) & Foundation",
+  "require": {
+    "tgm/plugin-activation": "2.*"
+  },
+  "license": "GPL2",
+  "authors": [
+    {
+      "name": "Andy Weir",
+      "email": "andy@ocean-internet.co.uk"
+    }
+  ],
+  "config": {
+    "vendor-dir": "vendor"
+  },
+  "autoload": {
+    "psr-0": {"Ois": "src/"}
+  }
+}
