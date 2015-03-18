@@ -1,0 +1,19 @@
+{
+  "name": "wptf-parent-theme-styles",
+  "version": "1.0.0",
+  "homepage": "https://github.com/wordpress-twig-foundation/parent-theme-styles",
+  "authors": [
+    "Andy Weir <andy@ocean-internet.co.uk>"
+  ],
+  "description": "Responsive styles for wptf-parent-theme",
+  "main": "scss/wptf.css",
+  "keywords": [
+    "wordpress",
+    "foundation",
+    "scss"
+  ],
+  "license": "GPL2",
+  "ignore": [
+    "bower_components"
+  ]
+}
