@@ -23,6 +23,7 @@
     "test",
     "tests"
   ],
+  "directory" : "wp-twig-foundation/bower_components",
   "dependencies": {
     "wptf-parent-theme-styles": "1.*"
   }
