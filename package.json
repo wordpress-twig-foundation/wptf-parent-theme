@@ -1,0 +1,31 @@
+{
+  "name": "wptf-parent-theme",
+  "version": "1.0.0",
+  "description": "WordPress Parent Theme using Twig (Timber) & Foundation",
+  "main": "wp-twig-foundation/style.css",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wordpress-twig-foundation/wptf-parent-theme.git"
+  },
+  "keywords": [
+    "wordpress",
+    "twig",
+    "timber",
+    "foundation",
+    "theme",
+    "scss"
+  ],
+  "author": "Andy Weir <andy@ocean-internet.co.uk>",
+  "license": "GPL2",
+  "bugs": {
+    "url": "https://github.com/wordpress-twig-foundation/wptf-parent-theme/issues"
+  },
+  "homepage": "https://github.com/wordpress-twig-foundation/wordpress-twig-foundation",
+  "devDependencies": {
+    "grunt-cli": "*",
+    "grunt-contrib-compass": "*",
+    "grunt-contrib-watch": "*"
+  }
+}

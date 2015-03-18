@@ -1,0 +1,10 @@
+{% extends "base.twig" %}
+{% block content %}
+	<article>
+		{% if title %}<h1>{{ title }}</h1>{% endif %}
+		{% for post in posts %}
+			{% include ['element/tease-'~post.post_type~'.twig', 'element/tease.twig'] %}
+		{% endfor %}
+		{% include 'element/layout/pagination.twig' with { pagination: pagination } %}
+	</article>
+{% endblock %}

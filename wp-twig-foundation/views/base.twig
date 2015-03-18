@@ -1,0 +1,45 @@
+<!doctype html>
+<html class="no-js" lang="{{ site.language_attributes }}">
+<head>
+    <!-- Start html-header -->
+    {% include 'element/layout/html-header.twig' %}
+    <!-- End html-header -->
+
+    <!-- Start head_scripts -->
+    {% block head_scripts %}
+    {% endblock %}
+    <!-- End head_scripts -->
+</head>
+<body class="{{ body_class }}" data-template="base.twig">
+{%  include 'element/layout/google-tag-manager.twig' %}
+{% include 'element/layout/browse-happy.twig' %}
+
+<!-- Start Header -->
+{% include 'element/layout/header.twig' %}
+<!-- End Header -->
+
+<!-- Start Content -->
+<main>
+    {% block content %}
+    {% include 'element/layout/main.twig' %}
+    {% endblock %}
+</main>
+<!-- End Content -->
+
+<!-- Start Footer -->
+{% block footer %}
+    {% include 'element/layout/footer.twig' %}
+{% endblock %}
+<!-- End Footer -->
+
+<!-- Start wp_footer -->
+{{ function('wp_footer') }}
+<!-- End wp_footer -->
+
+<!-- Start foot_scripts -->
+{% block foot_scripts %}
+{% endblock %}
+<!-- End foot_scripts -->
+
+</body>
+</html>

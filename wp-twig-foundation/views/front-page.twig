@@ -1,0 +1,46 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+    <!-- Content Slider -->
+    <section class="content-slider">
+        <div>
+            <ul class="featured" data-orbit>
+                {% for post in carousel %}
+                    <li class="slide">
+                        <img src="{{post.get_thumbnail.get_src|resize(970, 500)}}" class="my-thumb-class" alt="{{post.title}}" />
+                        <div class="orbit-caption">
+                            <h2><a href="{{ post.link }}">{{post.title}}</a></h2>
+                            <p>{{post.get_preview}}</p>
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </section>
+    <!-- End Content Slider -->
+<section>
+
+</section>
+    <!-- Widgets -->
+    <section><!-- Primary Widget -->
+                <section class="large-4 medium-12 columns">
+                    {{ homePrimary }}
+                </section>
+                <!-- End Primary Widget -->
+
+
+                <!-- Widget 1 -->
+                <section class="large-4 medium-6 small-12 columns">
+                    {{ homeOne }}
+                </section>
+                <!-- End Widget 1 ->
+
+                <!-- Widget 2 -->
+                <section class="large-4 medium-6 small-12 columns">
+                    {{ homeTwo }}
+                </section>
+                <!-- End Widget 2 -->
+    </section>
+    <!-- End Widgets -->
+{% endblock %}

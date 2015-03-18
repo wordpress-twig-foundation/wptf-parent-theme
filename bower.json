@@ -1,0 +1,30 @@
+{
+  "name":     "wptf-parent-theme",
+  "version":  "1.0.0",
+  "homepage": "https://github.com/wordpress-twig-foundation/wptf-parent-theme",
+  "authors": [
+    "Andy Weir <andy@ocean-internet.co.uk>"
+  ],
+  "description": "WordPress Parent Theme using Twig (Timber) and Foundation",
+  "main":        "wp-twig-foundation/style.css",
+  "keywords": [
+    "wordpress",
+    "twig",
+    "timber",
+    "foundation",
+    "theme",
+    "scss"
+  ],
+  "license": "GPL2",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "directory" : "wp-twig-foundation/bower_components",
+  "dependencies": {
+    "wptf-parent-theme-styles": "1.*"
+  }
+}
